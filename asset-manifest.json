@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/sowwy/static/css/main.19f1bf7d.chunk.css",
+    "main.js": "/sowwy/static/js/main.dd8c302f.chunk.js",
+    "main.js.map": "/sowwy/static/js/main.dd8c302f.chunk.js.map",
+    "runtime-main.js": "/sowwy/static/js/runtime-main.24d30774.js",
+    "runtime-main.js.map": "/sowwy/static/js/runtime-main.24d30774.js.map",
+    "static/js/2.0eca41a5.chunk.js": "/sowwy/static/js/2.0eca41a5.chunk.js",
+    "static/js/2.0eca41a5.chunk.js.map": "/sowwy/static/js/2.0eca41a5.chunk.js.map",
+    "index.html": "/sowwy/index.html",
+    "static/css/main.19f1bf7d.chunk.css.map": "/sowwy/static/css/main.19f1bf7d.chunk.css.map",
+    "static/js/2.0eca41a5.chunk.js.LICENSE.txt": "/sowwy/static/js/2.0eca41a5.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/sowwy/static/media/Gilroy-Black.bf3a5f79.ttf",
+    "static/media/Ic.b537ff58.svg": "/sowwy/static/media/Ic.b537ff58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.24d30774.js",
+    "static/js/2.0eca41a5.chunk.js",
+    "static/css/main.19f1bf7d.chunk.css",
+    "static/js/main.dd8c302f.chunk.js"
+  ]
+}
