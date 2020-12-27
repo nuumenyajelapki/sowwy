@@ -1,23 +1,51 @@
-import logo from './logo.svg';
 import './App.css';
+import Ic from './img/Ic.svg'
 
 function App() {
+  let month = [
+    'Jan',
+    'Feb',
+    'Mar',
+    'Apr',
+    'May',
+    'June',
+    'July',
+    'Aug',
+    'Sept',
+    'Oct',
+    'Nov',
+    'Dec'
+  ]
+
+  let then = new Date(2020, 11, 27)
+
+  let dateStamp = new Date();
+
+  if (localStorage.getItem('days') === null) localStorage.setItem('days', Math.round(then / (1000 * 60 * 60 * 24)));
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container" style={{textAlign: "center", color: "whitesmoke", marginTop: "25vh"}}>
+        <div className="App-logo">
+          <img src={Ic} alt=""></img>
+        </div>
+        <div style={{marginTop: "50px"}}>
+          <h4>Сегодня</h4>
+          <h1>{ month[dateStamp.getMonth()] } {', ' + dateStamp.getDate() }</h1>
+        </div>
+        <div style={{marginTop: "50px"}}>
+          <h4>Дней без sowwy</h4>
+          <h1>{ Math.round((dateStamp / (1000 * 60 * 60 * 24)) - localStorage.getItem('days')) }</h1>
+        </div>
+        <button type="button"
+        className="btn btn-outline-secondary"
+        style={{marginTop: "50px"}}
+        onClick={
+          () => {
+            localStorage.setItem('days', Math.round(dateStamp / (1000 * 60 * 60 * 24)));
+            window.location.reload();
+          }
+        }
+        >Сброс</button>
     </div>
   );
 }
