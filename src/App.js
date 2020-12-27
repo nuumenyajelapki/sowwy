@@ -17,7 +17,7 @@ function App() {
     'Декабрь'
   ]
 
-  let then = new Date(2020, 11, 27)
+  let then = new Date(2020, 11, 28)
 
   let dateStamp = new Date();
 
